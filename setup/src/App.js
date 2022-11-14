@@ -8,6 +8,13 @@ function App() {
     let generateNum = parseInt(count);
     setText(data.slice(0, count));
   };
+
+  if (count > 8) {
+    setCount(8);
+  } else if (count < 0) {
+    setCount(0);
+  }
+
   return (
     <section className="section-center">
       <h4>Bored of boring Lorem Ipsum?</h4>
